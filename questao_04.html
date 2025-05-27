@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Questão 04</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .notification-card {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 250px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .close-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+    }
+    .card-content p {
+      margin: 10px 0 0;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="content">
+    <h1>Página com Notificação</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at magna et lacus posuere tristique. Vestibulum et diam vel est bibendum sagittis. Sed suscipit odio in tortor pulvinar, id mattis erat lacinia. Vestibulum nec suscipit justo. Curabitur dapibus sapien non lorem sodales, at posuere lacus tincidunt.</p>
+    <p>Sed varius purus vitae mattis euismod. Suspendisse a nunc eget justo vehicula facilisis. Vestibulum iaculis, augue a lacinia luctus, metus arcu dignissim nunc, at pretium lectus elit nec lorem.</p>
+    <p>Fusce id tincidunt nibh. Suspendisse potenti. Sed posuere fringilla est, at feugiat libero. Nam ut nulla vel dolor pretium accumsan. Maecenas a facilisis tortor, ut semper justo.</p>
+    <p>Aliquam erat volutpat. Suspendisse vitae fringilla orci. Etiam sed diam non lorem feugiat scelerisque. Donec rhoncus tortor ac nisi blandit, nec lobortis justo eleifend. Mauris posuere, mauris nec egestas efficitur, metus justo bibendum lacus, vel gravida lacus ante vitae urna.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>   
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>   
+
+
+
+
+  </div>
+
+  <div class="notification-card" id="card">
+    <div class="card-header">
+      <button class="close-btn" onclick="fecharCard()">X</button>
+    </div>
+    <div class="card-content">
+      <h3>Novidade!</h3>
+      <p>Confira nossos novos produtos.</p>
+    </div>
+  </div>
+
+  <script>
+    function fecharCard() {
+      document.getElementById("card").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

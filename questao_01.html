@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> minha 1 questao </title>
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header, footer {
+      background-color:crimson;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+      min-height: 300px;
+    }
+
+     aside {
+      flex: 30%;
+      background-color:bisque;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+     nav a {
+      text-decoration: none;
+      color: darkslategray;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 70%;
+      background-color:beige;
+      padding: 20px;
+    }
+
+    .imagem-fake {
+      width: 100%;
+      height: 150px;
+      background-color:burlywood;
+      margin: 15px 0;
+    }
+
+     footer p {
+      margin: 5px;
+    }
+
+    @media (max-width: 400px) {
+      section {
+        flex-direction: column;
+      }
+
+      aside, main {
+        flex: 100%;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> Desenvolvimento de software Web </h1>
+    </header>
+
+    <section>
+
+        <aside>
+            <nav>
+                <ul>
+                    <li> <a href="#link1"> link 1</a></li>
+                    <li> <a href="#link2"> link 2</a></li>
+                    <li> <a href="#link3"> link 3 </a></li>
+                    <li> <a href="#link4"> link 4 </a></li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main>
+            <h2> Introdução ao html </h2>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem praesentium culpa qui omnis iusto perspiciatis sit vero, accusantium corporis necessitatibus eos veniam animi. Repellendus architecto dolore dolor porro itaque ad.</p>
+            <div class="imagem-fake"></div>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nulla animi. Consequuntur animi corrupti delectus temporibus fugit reprehenderit at quae. Maxime nemo at delectus culpa illo eligendi quasi in magni! </p>
+            <div class="imagem-fake"></div>
+        </main>
+    </section>
+
+    <footer>
+        <p> pedroarthurb98@gmail.com </p>
+        <p> 2025.1 </p>
+        <p> todos os direitos reservados </p>
+    </footer>
+
+</body>
+</html>
+
